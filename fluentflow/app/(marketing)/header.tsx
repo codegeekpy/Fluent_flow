@@ -25,11 +25,7 @@ export const Header = () => {
               <UserButton></UserButton>
             </SignedIn>
             <SignedOut>
-                <SignInButton
-                mode="modal"
-                afterSignInUrl=""
-                >
-
+                <SignInButton>
                 </SignInButton>
             </SignedOut>
         </ClerkLoaded>
