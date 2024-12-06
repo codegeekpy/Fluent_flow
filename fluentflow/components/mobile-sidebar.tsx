@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -7,16 +8,16 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { SideBar } from "./sidebar";
-import { Menu, Sidebar } from "lucide-react";
-export const MobileSidebar=()=>{
-    return (
-        <Sheet>
-            <SheetTrigger>
-                <Menu className="text-white"/>
-            </SheetTrigger>
-            <SheetContent className="p-0 z-[100px] " side="left">
-                <Sidebar/>
-            </SheetContent>
-        </Sheet>
-    );
+
+export const MobileSidebar = () => {
+  return (
+    <Sheet>
+      <SheetTrigger>
+        <Menu className="text-white" />
+      </SheetTrigger>
+      <SheetContent className="p-0 " side="left">
+        <SideBar />
+      </SheetContent>
+    </Sheet>
+  );
 };
